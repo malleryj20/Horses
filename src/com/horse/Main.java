@@ -6,7 +6,7 @@ public class Main {
 	Horse [] g = {new Horse("Timmy"), new Horse("Barbie"), null, new Horse("Jimmy")};
 	HorseBarn a = new HorseBarn(g);
 	HorseBarn b = a;
-	b.setHorse(0, "Ron").setHorse(2, "Sammy");
+	b.setHorse(0, "Ron").setHorse(3, "Sammy");
 	Horse [] f = {null, null, null, new Horse("Harold"), null};
 	HorseBarn c = new HorseBarn(f);
 	HorseBarn [] allBarns = {a, b, c};

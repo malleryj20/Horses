@@ -16,7 +16,10 @@ public class HorseBarn {
     }
 
     public HorseBarn setHorse(int index, String name){
-        horses[index].setname(name);
+        if (horses[index] == null)
+            horses[index] = new Horse(name);
+        else
+            horses[index].setname(name);
         return this;
     }
 
