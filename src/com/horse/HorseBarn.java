@@ -23,6 +23,14 @@ public class HorseBarn {
         return this;
     }
 
+    public HorseBarn setHorse(int index, boolean set){
+        if (set)
+            horses[index] = new Horse("");
+        else
+            horses[index] = null;
+        return this;
+    }
+
     public Horse getHorse(int N){
         return horses[N];
     }
